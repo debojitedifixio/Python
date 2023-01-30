@@ -21,24 +21,23 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
-print('You\'re on a "mission" is to find the treasure.') #important line
+print('You\'re on a "mission" is to find the treasure.')  # important line
 
-#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+# https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-#Write your code below this line 👇
+# Write your code below this line 👇
 
-rl=input("Where you wanna go? Left or Right.").lower()
+rl = input("Where you wanna go? Left or Right.").lower()
 
 if rl == 'left':
     sw = input("You wanna wait for a Boat or Swim?").lower()
     if sw == "boat":
         button = input("Which Button you want to press.. Red, Green or Yellow?").lower()
         if button == "green":
-            print("Congragulations!! you found the Treasure.")
+            print("Congratulations!! you found the Treasure.")
         else:
             print("Game Over. You lost it. Try Again.")
     else:
         print("Game Over.")
 else:
     print("Game Over.")
-
