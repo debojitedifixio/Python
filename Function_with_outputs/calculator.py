@@ -1,7 +1,7 @@
 # Calculator
 # Add
 from art import logo
-
+from replit import clear
 
 def add(n1, n2):
     return n1 + n2
@@ -28,10 +28,9 @@ operations = {"+": add,
               "/": div
               }
 
-print(logo)
-
 
 def calculator():
+    print(logo)
     num1 = float(input("Enter the first number: "))
     flag = True
     while flag:
@@ -53,6 +52,7 @@ def calculator():
             num1 = answer
         elif choice == 'n':
             flag = False
+            clear()
             calculator()
         else:
             flag = False
