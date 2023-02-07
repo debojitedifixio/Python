@@ -10,3 +10,6 @@ def increase_enemies():
 
 increase_enemies()
 print(f"enemies outside function: {enemies}")
+
+
+# to use global variable, need to be defined inside the function as "global <variable name>"
